@@ -1,0 +1,102 @@
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f7f7f7;
+    line-height: 1.6;
+  }
+  
+  header, footer {
+    background: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  main {
+    padding: 20px;
+  }
+  
+  section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+  }
+  
+  /* Button styling */
+  button {
+    padding: 10px 20px;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  /* Hover area styling */
+  #hoverArea {
+    width: 200px;
+    height: 50px;
+    background-color: #e0e0e0;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+  }
+  
+  /* Secret action area */
+  #secretAction {
+    width: 300px;
+    height: 50px;
+    background-color: #ffc107;
+    line-height: 50px;
+    text-align: center;
+    margin: 20px auto;
+    border: 1px solid #aa8500;
+    user-select: none;
+  }
+  
+  /* Image Gallery */
+  #gallery {
+    text-align: center;
+  }
+  #gallery img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.5s ease;
+  }
+  
+  /* Accordion / Tabs */
+  #tabs {
+    margin-top: 20px;
+  }
+  .tabButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    text-align: left;
+    outline: none;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  .tabButton:hover {
+    background: #0056b3;
+  }
+  .tabContent {
+    display: none;
+    padding: 10px;
+    border: 1px solid #007bff;
+    border-top: none;
+  }
+  
+  /* Form styling */
+  form div {
+    margin-bottom: 15px;
+  }
+  .error {
+    color: red;
+    margin-left: 10px;
+  }
