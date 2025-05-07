@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Event Handling Playground</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>JavaScript Event Handling Playground</h1>
+  </header>
+
+  <main>
+    <!-- Event Handling Section -->
+    <section id="event-handling">
+      <h2>Event Handling 🎈</h2>
+      <button id="clickButton">Click Me!</button>
+      <p id="clickResult">Nothing happened yet.</p>
+
+      <div id="hoverArea">Hover over me!</div>
+
+      <p id="keypressDisplay">Press any key and see what happens.</p>
+
+      <!-- Bonus: secret action with double-click -->
+      <div id="secretAction">Double-click me for a secret action!</div>
+    </section>
+    
+    <!-- Interactive Elements Section -->
+    <section id="interactive-elements">
+      <h2>Interactive Elements 🎮</h2>
+
+      <!-- A button that changes text and color -->
+      <button id="changeColorButton">Change Text &amp; Color</button>
+      <p id="colorText">This text and color will change!</p>
+
+      <!-- Image Gallery / Slideshow -->
+      <div id="gallery">
+        <h3>Image Gallery</h3>
+        <img id="galleryImage" src="images/image1.jpg" alt="Gallery Image">
+        <br>
+        <button id="prevImage">&lt; Prev</button>
+        <button id="nextImage">Next &gt;</button>
+      </div>
+
+      <!-- Accordion / Tabs -->
+      <div id="tabs">
+        <h3>Accordion Tabs</h3>
+        <div class="tab">
+          <button class="tabButton" data-target="tab1">Tab 1</button>
+          <div id="tab1" class="tabContent">Content for Tab 1.</div>
+        </div>
+        <div class="tab">
+          <button class="tabButton" data-target="tab2">Tab 2</button>
+          <div id="tab2" class="tabContent">Content for Tab 2.</div>
+        </div>
+        <div class="tab">
+          <button class="tabButton" data-target="tab3">Tab 3</button>
+          <div id="tab3" class="tabContent">Content for Tab 3.</div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Form Validation Section -->
+    <section id="form-validation">
+      <h2>Form Validation 📋</h2>
+      <form id="registrationForm" novalidate>
+        <div>
+          <label for="name">Name (required):</label>
+          <input type="text" id="name" name="name" required>
+          <span class="error" id="nameError"></span>
+        </div>
+        <div>
+          <label for="email">Email (required):</label>
+          <input type="email" id="email" name="email" required>
+          <span class="error" id="emailError"></span>
+        </div>
+        <div>
+          <label for="password">Password (min 8 characters):</label>
+          <input type="password" id="password" name="password" minlength="8" required>
+          <span class="error" id="passwordError"></span>
+        </div>
+        <div>
+          <button type="submit">Register</button>
+        </div>
+        <div id="formMessage"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 JavaScript Playground. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
